@@ -1,7 +1,11 @@
 module Api
   module V1
     class BrandsController < BaseController
-      def index; end
+      def index
+        brands = Brand.all
+
+        render json: { brands: brands }, status: :ok
+      end
 
       def create; end
 
