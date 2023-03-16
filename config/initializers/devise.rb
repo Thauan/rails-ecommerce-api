@@ -20,19 +20,19 @@ Devise.setup do |config|
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
 
-  # config.jwt do |jwt|
-  #   jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
+  config.jwt do |jwt|
+    jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
     
-  #   jwt.dispatch_requests = [
-  #     ['POST', %r{^/sign_in$}]
-  #   ]
+    jwt.dispatch_requests = [
+      ['POST', %r{^/sign_in$}]
+    ]
   
-  #   jwt.revocation_requests = [
-  #     ['DELETE', %r{^/sign_out$}]
-  #   ]
+    jwt.revocation_requests = [
+      ['DELETE', %r{^/sign_out$}]
+    ]
     
-  #   jwt.expiration_time = 15.day.to_i
-  # end
+    jwt.expiration_time = 15.day.to_i
+  end
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
