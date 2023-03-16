@@ -1,0 +1,2 @@
+class VariantType < ApplicationRecord
+end
