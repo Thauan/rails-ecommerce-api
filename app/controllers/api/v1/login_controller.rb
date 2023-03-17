@@ -23,8 +23,6 @@ module Api
           is_active: true
         )
         
-        debugger
-
         result = AuthenticateUser.authenticate(user: user, password: sign_in_params[:password])
 
         if result

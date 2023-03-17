@@ -9,7 +9,7 @@ module Api
           new(**nargs).authenticate
         end
   
-        def initialize(user:, password:, expiration_time: 15.minutes.from_now.to_i)
+        def initialize(user:, password:, expiration_time: 45.minutes.from_now.to_i)
           @user = user
           @password = password
           @expiration_time = expiration_time
