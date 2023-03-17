@@ -36,7 +36,7 @@ RSpec.describe Api::V1::BaseController do
       it 'has to return error message' do
         get :dummy_action
 
-        expect(parsed_body).to eq({ 'errors' => 'Token expirado' })
+        expect(parsed_body).to eq({ 'errors' => 'Expired Token' })
       end
     end
   end
@@ -64,7 +64,7 @@ RSpec.describe Api::V1::BaseController do
       it 'has to return error message' do
         get :dummy_action
 
-        expect(parsed_body).to eq({ 'errors' => 'Token inválido' })
+        expect(parsed_body).to eq({ 'errors' => 'Invalid Token' })
       end
     end
   end
@@ -92,7 +92,7 @@ RSpec.describe Api::V1::BaseController do
       it 'has to returns error message' do
         get :dummy_action
 
-        expect(parsed_body).to eq({ 'errors' => 'Recurso não encontrado' })
+        expect(parsed_body).to eq({ 'errors' => 'Not Found' })
       end
     end
   end
