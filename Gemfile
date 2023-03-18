@@ -6,6 +6,10 @@ ruby "3.1.0"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.1"
 
+group :development, :test do
+  gem 'dotenv-rails', require: 'dotenv/rails-now'
+end
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
@@ -29,8 +33,6 @@ gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
-
-gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development]
 
 gem 'devise', github: 'heartcombo/devise', branch: 'main'
 gem 'devise-jwt'
