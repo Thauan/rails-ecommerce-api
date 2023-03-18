@@ -1,24 +1,24 @@
-# README
+# API de E-commerce em Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esta é uma API de e-commerce desenvolvida em Ruby on Rails que possui como principais funcionalidades o cadastro de produtos, categorias, marcas e variantes. É possível utilizar essa API para desenvolver uma plataforma de e-commerce completa, incluindo a criação de lojas virtuais, carrinhos de compras, processos de pagamento e muito mais.
+Configuração
 
-Things you may want to cover:
+Antes de começar a utilizar a API, é necessário realizar algumas configurações. Primeiramente, você deve ter instalado em sua máquina o Ruby e o Rails. Caso ainda não tenha, acesse a documentação oficial do Ruby on Rails para realizar a instalação.
 
-* Ruby version
+Após a instalação, clone o repositório em sua máquina:
 
-* System dependencies
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+```
 
-* Configuration
+Em seguida, acesse a pasta do projeto e execute o seguinte comando para instalar as dependências:
 
-* Database creation
+```bash
+bundle install
+```
 
-* Database initialization
+Por fim, execute o seguinte comando para criar o banco de dados e as tabelas necessárias:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+rails db:create db:migrate
+```
