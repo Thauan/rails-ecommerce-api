@@ -1,6 +1,8 @@
 module Api
   module V1
     class ProductsController < BaseController
+      before_action :set_product, only: [:show, :edit, :update, :destroy];
+
       def index
         @products = Product.all
 
@@ -18,13 +20,14 @@ module Api
       end
 
       def show
-        @product = Product.find(params[:id])
         render json: { product: @product }, status: :ok
       end
 
-      def delete
-        @product = Product.find(params[:id])
-        
+      def edit; end;
+
+      def update; end;
+
+      def delete        
         if @product
           @product.destroy
           render json: { message: 'Product successfully deleted' }, status: :ok
@@ -34,6 +37,10 @@ module Api
       end
 
       private
+
+      def set_product
+        @product = Product.find(params[:id])
+      end
 
       def product_params
         params.require(:product).permit(:name, :price, :slug, :description, :brief)        

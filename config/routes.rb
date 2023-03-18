@@ -11,9 +11,9 @@ Rails.application.routes.draw do
       post :sign_up, to: 'login#sign_up'
       post :refresh_token, to: 'login#refresh_token'
       
-      resources :brands, except: :show
-      resources :products, except: :show
-      resources :variants, except: :show
+      resources :brands
+      resources :products
+      resources :variants
     end
   end
 end
