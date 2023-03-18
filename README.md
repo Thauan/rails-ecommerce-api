@@ -1,7 +1,8 @@
 # API de E-commerce em Ruby on Rails
 
 Esta é uma API de e-commerce desenvolvida em Ruby on Rails que possui como principais funcionalidades o cadastro de produtos, categorias, marcas e variantes. É possível utilizar essa API para desenvolver uma plataforma de e-commerce completa, incluindo a criação de lojas virtuais, carrinhos de compras, processos de pagamento e muito mais.
-Configuração
+
+# Configuração
 
 Antes de começar a utilizar a API, é necessário realizar algumas configurações. Primeiramente, você deve ter instalado em sua máquina o Ruby e o Rails. Caso ainda não tenha, acesse a documentação oficial do Ruby on Rails para realizar a instalação.
 
